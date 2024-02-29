@@ -36,3 +36,33 @@ sample = "おはよう"
 
 let sample = "おはよう"
 // 再定義NG →エラーが起こる
+
+即時関数とは、関数を定義すると同時に実行される構文です。関数を定義してから呼び出すという手間を省くことができる。
+
+// 無名関数
+const countNum = function(num) {
+  console.log(num)
+}
+countNum(1)
+
+// 即時関数
+(function countNum(num) {
+  console.log(num)
+})(1)
+
+
+アロー関数とは以下のようにfunctionの記述を省略し、その代わりに（）=>という記述によって関数を定義する構文です。より短い記述で関数定義をできるというメリットがあります。
+
+// 無名関数
+const 変数名 = function(){
+  処理
+}
+
+// アロー関数
+const 変数名 = () => {
+  処理
+}
+例）const countNum = (num) => {
+  console.log(num)
+}
+countNum(1)
