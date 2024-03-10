@@ -83,3 +83,9 @@ index.html
   <meta charset="UTF-8">
   <title>JavaScriptの練習サイト</title>
 </head>
+
+addEventListener()アドイベントリスナーメソッド
+イベント発火の際に実行する関数を定義するためのメソッド。
+
+【例】addEventListenerメソッド
+要素.addEventListener('イベント名', 関数)
