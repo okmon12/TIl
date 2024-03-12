@@ -89,3 +89,26 @@ addEventListener()アドイベントリスナーメソッド
 
 【例】addEventListenerメソッド
 要素.addEventListener('イベント名', 関数)
+
+・インラインスタイルとは、HTML要素の開始タグの中に直接CSSのソースコードを記述するプロパティの指定方法
+
+要素.setAttribute(name, value)
+HTML要素に属性を付与することができる。
+例）HTML
+<div id="test">テスト</div>
+例）
+const sample = document.getElementById("test")
+sample.setAttribute("style", "color: red;")
+// <div id="test" style="color: red;">テスト</div> が取得できる
+
+・removeAttributeメソッド
+要素.removeAttribute(name)
+nameは属性の名前を文字列で指定
+
+例えば、以下のように指定した要素の属性を削除することができる。
+例）HTML
+<div class="contents" id="apple">りんご</div>
+例）removeAttributeメソッドの使用方法
+const apple = document.getElementById("apple")
+apple.removeAttribute("class")
+// <div id="apple">りんご</div> が取得できる
